@@ -185,7 +185,7 @@ models:
   home:
     type: page
     label: Home
-    template: home
+    template: page
     file: index.md
     singleInstance: true
     fields:
