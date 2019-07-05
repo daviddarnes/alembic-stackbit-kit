@@ -25,6 +25,10 @@ models:
     label: Config
     fields:
       - type: string
+        name: theme
+        label: Theme
+        hidden: true
+      - type: string
         name: title
         label: Site Title
       - type: image
