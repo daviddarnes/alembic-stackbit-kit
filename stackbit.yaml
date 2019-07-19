@@ -181,34 +181,33 @@ models:
       #     - type: string
       #       name: Email
       #       label: Email
-  home:
-    type: page
-    label: Home
-    template: page
-    file: index.md
-    singleInstance: true
-    fields:
-      - type: string
-        name: title
-        label: Page title
-        required: true
-      - type: markdown
-        name: feature_text
-        label: Feature text
-      - type: image
-        name: feature_image
-        label: Feature image
-      # - type: string
-      #   name: excerpt
-      #   label: Excerpt
-      # - type: boolean
-      #   name: aside
-      #   label: Aside
+  # home:
+  #   type: page
+  #   label: Home
+  #   template: page
+  #   file: index.md
+  #   singleInstance: true
+  #   fields:
+  #     - type: string
+  #       name: title
+  #       label: Page title
+  #       required: true
+  #     - type: markdown
+  #       name: feature_text
+  #       label: Feature text
+  #     - type: image
+  #       name: feature_image
+  #       label: Feature image
+  #     # - type: string
+  #     #   name: excerpt
+  #     #   label: Excerpt
+  #     # - type: boolean
+  #     #   name: aside
+  #     #   label: Aside
   page:
     type: page
     label: Page
     template: page
-    exclude: "{index.md}"
     fields:
       - type: string
         name: title
@@ -220,21 +219,21 @@ models:
       # - type: image
       #   name: feature_image
       #   label: Feature image
-      - type: string
-        name: excerpt
-        label: Excerpt
+      # - type: string
+      #   name: excerpt
+      #   label: Excerpt
+      # # - type: boolean
+      # #   name: aside
+      # #   label: Aside
       # - type: boolean
-      #   name: aside
-      #   label: Aside
-      - type: boolean
-        name: indexing
-        label: Indexing
-      - type: boolean
-        name: sitemap
-        label: Sitemap
-      - type: string
-        name: permalink
-        label: Permalink
+      #   name: indexing
+      #   label: Indexing
+      # - type: boolean
+      #   name: sitemap
+      #   label: Sitemap
+      # - type: string
+      #   name: permalink
+      #   label: Permalink
   # post:
   #   type: page
   #   label: Post
