@@ -208,7 +208,7 @@ models:
   page:
     type: page
     label: Page
-    template: page
+    layout: page
     fields:
       - type: string
         name: title
