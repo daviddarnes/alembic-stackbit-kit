@@ -40,29 +40,29 @@ models:
         description: The output path for your pages, posts, or collections.
         default: /posts/:slug:output_ext
         hidden: true
-      - type: object
-        name: collections
-        label: Collections
-        fields:
-          - type: object
-            name: posts
-            label: Posts
-            fields:
-              - type: string
-                name: title
-                label: Collection title
-              - type: boolean
-                name: output
-                label: Output
-              - type: string
-                name: description
-                label: Collection description
-              - type: markdown
-                name: feature_text
-                label: Collection feature text
-              - type: image
-                name: feature_image
-                label: Collection feature image
+      # - type: object
+      #   name: collections
+      #   label: Collections
+      #   fields:
+      #     - type: object
+      #       name: posts
+      #       label: Posts
+      #       fields:
+      #         - type: string
+      #           name: title
+      #           label: Collection title
+      #         - type: boolean
+      #           name: output
+      #           label: Output
+      #         - type: string
+      #           name: description
+      #           label: Collection description
+      #         - type: markdown
+      #           name: feature_text
+      #           label: Collection feature text
+      #         - type: image
+      #           name: feature_image
+      #           label: Collection feature image
       - type: list
         name: navigation_header
         label: Header navigation
@@ -286,9 +286,9 @@ models:
       - type: boolean
         name: aside
         label: Aside
-      - type: string
-        name: collectionpage
-        label: Collection page
+      # - type: string
+      #   name: collectionpage
+      #   label: Collection page
   categories:
     type: page
     label: Categories page
