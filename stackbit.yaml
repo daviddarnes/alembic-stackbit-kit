@@ -209,6 +209,7 @@ models:
     label: Page
     template: page
     exclude: index.md
+    exclude: "{index.md,_posts}"
     fields:
       - type: string
         name: title
