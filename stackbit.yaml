@@ -1,11 +1,6 @@
 ssgName: jekyll
 stackbitVersion: "^0.2.41"
 uploadDir: assets
-injectLocations:
-  htmlHead:
-    file: _includes/site-before-start.html
-  htmlBody:
-    file: _includes/site-before-end.html
 collections:
   - label: Home
     source: pages
@@ -183,13 +178,13 @@ models:
             options:
               - {label: "Disabled", value: ""}
               - {label: "Enabled", value: "#2D72D9"}
-          - type: string
+          - type: boolean
             name: Email
             label: Email
   home:
     type: page
     label: Home
-    template: page
+    layout: page
     file: index.md
     singleInstance: true
     fields:
@@ -212,8 +207,8 @@ models:
   page:
     type: page
     label: Page
-    template: page
-    exclude: index.md
+    layout: page
+    exclude: "{index.md,_posts/**}"
     fields:
       - type: string
         name: title
@@ -243,7 +238,7 @@ models:
   post:
     type: page
     label: Post
-    template: post
+    layout: post
     folder: _posts
     fields:
       - type: string
@@ -280,10 +275,14 @@ models:
   blog:
     type: page
     label: Blog
-    template: blog
+    layout: blog
     singleInstance: true
     file: blog/index.html
     fields:
+      - type: string
+        name: title
+        label: Page Title
+        required: true
       - type: boolean
         name: aside
         label: Aside
@@ -293,7 +292,7 @@ models:
   categories:
     type: page
     label: Categories Page
-    template: categories
+    layout: categories
     singleInstance: true
     file: categories.md
     fields:
