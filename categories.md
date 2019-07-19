@@ -1,5 +1,5 @@
 ---
 title: Categories
-layout: page
+layout: categories
 ---
 eh
