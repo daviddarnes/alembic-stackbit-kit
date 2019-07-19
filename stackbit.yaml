@@ -96,91 +96,91 @@ models:
       - type: string
         name: email
         label: Site email
-      - type: object
-        name: social_links
-        label: Social links
-        description: Leave empty to hide
-        fields:
-          - type: string
-            name: Twitter
-            label: Twitter
-          - type: string
-            name: LinkedIn
-            label: LinkedIn
-          - type: string
-            name: Googleplus
-            label: Google+
-          - type: string
-            name: GitHub
-            label: GitHub
-          - type: string
-            name: link
-            label: Link
-          - type: string
-            name: RSS
-            label: RSS
-      - type: object
-        name: sharing_links
-        label: Sharing links
-        description: Leave empty to hide
-        fields:
-          - type: enum
-            name: Twitter
-            label: Twitter
-            options:
-              - {label: "Disabled", value: ""}
-              - {label: "Enabled", value: "#0d94e7"}
-          - type: enum
-            name: facebook
-            label: Facebook
-            options:
-              - {label: "Disabled", value: ""}
-              - {label: "Enabled", value: "#3B5998"}
-          - type: enum
-            name: Googleplus
-            label: Google+
-            options:
-              - {label: "Disabled", value: ""}
-              - {label: "Enabled", value: "#DC4E41"}
-          - type: enum
-            name: Pinterest
-            label: Pinterest
-            options:
-              - {label: "Disabled", value: ""}
-              - {label: "Enabled", value: "#BD081C"}
-          - type: enum
-            name: LinkedIn
-            label: LinkedIn
-            options:
-              - {label: "Disabled", value: ""}
-              - {label: "Enabled", value: "#0077B5"}
-          - type: enum
-            name: tumblr
-            label: Tumblr
-            options:
-              - {label: "Disabled", value: ""}
-              - {label: "Enabled", value: "#36465D"}
-          - type: enum
-            name: Reddit
-            label: Reddit
-            options:
-              - {label: "Disabled", value: ""}
-              - {label: "Enabled", value: "#FF4500"}
-          - type: enum
-            name: HackerNews
-            label: Hacker News
-            options:
-              - {label: "Disabled", value: ""}
-              - {label: "Enabled", value: "#ff6600"}
-          - type: enum
-            name: DesignerNews
-            label: Designer News
-            options:
-              - {label: "Disabled", value: ""}
-              - {label: "Enabled", value: "#2D72D9"}
-          - type: string
-            name: Email
-            label: Email
+      # - type: object
+      #   name: social_links
+      #   label: Social links
+      #   description: Leave empty to hide
+      #   fields:
+      #     - type: string
+      #       name: Twitter
+      #       label: Twitter
+      #     - type: string
+      #       name: LinkedIn
+      #       label: LinkedIn
+      #     - type: string
+      #       name: Googleplus
+      #       label: Google+
+      #     - type: string
+      #       name: GitHub
+      #       label: GitHub
+      #     - type: string
+      #       name: link
+      #       label: Link
+      #     - type: string
+      #       name: RSS
+      #       label: RSS
+      # - type: object
+      #   name: sharing_links
+      #   label: Sharing links
+      #   description: Leave empty to hide
+      #   fields:
+      #     - type: enum
+      #       name: Twitter
+      #       label: Twitter
+      #       options:
+      #         - {label: "Disabled", value: ""}
+      #         - {label: "Enabled", value: "#0d94e7"}
+      #     - type: enum
+      #       name: facebook
+      #       label: Facebook
+      #       options:
+      #         - {label: "Disabled", value: ""}
+      #         - {label: "Enabled", value: "#3B5998"}
+      #     - type: enum
+      #       name: Googleplus
+      #       label: Google+
+      #       options:
+      #         - {label: "Disabled", value: ""}
+      #         - {label: "Enabled", value: "#DC4E41"}
+      #     - type: enum
+      #       name: Pinterest
+      #       label: Pinterest
+      #       options:
+      #         - {label: "Disabled", value: ""}
+      #         - {label: "Enabled", value: "#BD081C"}
+      #     - type: enum
+      #       name: LinkedIn
+      #       label: LinkedIn
+      #       options:
+      #         - {label: "Disabled", value: ""}
+      #         - {label: "Enabled", value: "#0077B5"}
+      #     - type: enum
+      #       name: tumblr
+      #       label: Tumblr
+      #       options:
+      #         - {label: "Disabled", value: ""}
+      #         - {label: "Enabled", value: "#36465D"}
+      #     - type: enum
+      #       name: Reddit
+      #       label: Reddit
+      #       options:
+      #         - {label: "Disabled", value: ""}
+      #         - {label: "Enabled", value: "#FF4500"}
+      #     - type: enum
+      #       name: HackerNews
+      #       label: Hacker News
+      #       options:
+      #         - {label: "Disabled", value: ""}
+      #         - {label: "Enabled", value: "#ff6600"}
+      #     - type: enum
+      #       name: DesignerNews
+      #       label: Designer News
+      #       options:
+      #         - {label: "Disabled", value: ""}
+      #         - {label: "Enabled", value: "#2D72D9"}
+      #     - type: string
+      #       name: Email
+      #       label: Email
   home:
     type: page
     label: Home
