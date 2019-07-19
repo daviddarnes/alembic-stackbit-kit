@@ -1,11 +1,6 @@
 ssgName: jekyll
 stackbitVersion: "^0.2.41"
 uploadDir: assets
-injectLocations:
-  htmlHead:
-    file: _includes/site-before-start.html
-  htmlBody:
-    file: _includes/site-before-end.html
 collections:
   - label: Home
     source: pages
