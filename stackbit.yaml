@@ -1,19 +1,19 @@
 ssgName: jekyll
 stackbitVersion: "^0.2.41"
 uploadDir: assets
-collections:
-  - label: Home
-    source: pages
-    create: true
-    models: ["home"]
-  - label: Pages
-    source: pages
-    create: true
-    models: ["page"]
-  - label: Posts
-    source: pages
-    create: true
-    models: ["post"]
+# collections:
+#   - label: Home
+#     source: pages
+#     create: true
+#     models: ["home"]
+#   - label: Pages
+#     source: pages
+#     create: true
+#     models: ["page"]
+#   - label: Posts
+#     source: pages
+#     create: true
+#     models: ["post"]
 models:
   config:
     type: config
