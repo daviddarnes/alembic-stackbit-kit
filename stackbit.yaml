@@ -25,10 +25,10 @@ models:
         hidden: true
       - type: string
         name: title
-        label: Site Title
+        label: Site title
       - type: image
         name: logo
-        label: Site Logo
+        label: Site logo
       - type: string
         name: baseurl
         label: Base URL
@@ -42,30 +42,30 @@ models:
         hidden: true
       - type: object
         name: collections
-        label: collections
+        label: Collections
         fields:
           - type: object
             name: posts
-            label: posts
+            label: Posts
             fields:
               - type: string
                 name: title
-                label: Collection Title
+                label: Collection title
               - type: boolean
                 name: output
                 label: Output
               - type: string
                 name: description
-                label: Collection Description
+                label: Collection description
               - type: markdown
                 name: feature_text
-                label: Collection Feature Text
+                label: Collection feature text
               - type: image
                 name: feature_image
-                label: Collection Feature Image
+                label: Collection feature image
       - type: list
         name: navigation_header
-        label: Header Navigation
+        label: Header navigation
         items:
           type: object
           labelField: title
@@ -80,7 +80,7 @@ models:
               widget: url
       - type: list
         name: navigation_footer
-        label: Footer Navigation
+        label: Footer navigation
         items:
           type: object
           labelField: title
@@ -95,10 +95,10 @@ models:
               widget: url
       - type: string
         name: email
-        label: Site Email
+        label: Site email
       - type: object
         name: social_links
-        label: Social Links
+        label: Social links
         description: Leave empty to hide
         fields:
           - type: string
@@ -115,13 +115,13 @@ models:
             label: GitHub
           - type: string
             name: link
-            label: link
+            label: Link
           - type: string
             name: RSS
             label: RSS
       - type: object
         name: sharing_links
-        label: Sharing Links
+        label: Sharing links
         description: Leave empty to hide
         fields:
           - type: enum
@@ -132,7 +132,7 @@ models:
               - {label: "Enabled", value: "#0d94e7"}
           - type: enum
             name: facebook
-            label: facebook
+            label: Facebook
             options:
               - {label: "Disabled", value: ""}
               - {label: "Enabled", value: "#3B5998"}
@@ -156,7 +156,7 @@ models:
               - {label: "Enabled", value: "#0077B5"}
           - type: enum
             name: tumblr
-            label: tumblr
+            label: Tumblr
             options:
               - {label: "Disabled", value: ""}
               - {label: "Enabled", value: "#36465D"}
@@ -190,7 +190,7 @@ models:
     fields:
       - type: string
         name: title
-        label: Page Title
+        label: Page title
         required: true
       - type: markdown
         name: feature_text
@@ -212,7 +212,7 @@ models:
     fields:
       - type: string
         name: title
-        label: Page Title
+        label: Page title
         required: true
       - type: markdown
         name: feature_text
@@ -243,7 +243,7 @@ models:
     fields:
       - type: string
         name: title
-        label: Page Title
+        label: Page title
         required: true
       - type: markdown
         name: feature_text
@@ -259,7 +259,7 @@ models:
         label: Image
       - type: boolean
         name: comments
-        label: Enable Comments
+        label: Enable comments
         default: true
       - type: boolean
         name: aside
@@ -291,14 +291,14 @@ models:
         label: Collection page
   categories:
     type: page
-    label: Categories Page
+    label: Categories page
     template: categories
     singleInstance: true
     file: categories.md
     fields:
       - type: string
         name: title
-        label: Page Title
+        label: Page title
         required: true
       - type: string
         name: excerpt
