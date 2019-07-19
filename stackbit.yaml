@@ -23,23 +23,23 @@ models:
         name: theme
         label: Theme
         hidden: true
-      - type: string
-        name: title
-        label: Site title
-      - type: image
-        name: logo
-        label: Site logo
-      - type: string
-        name: baseurl
-        label: Base URL
-        description: Serve the website from the given base URL
-        hidden: true
-      - type: string
-        name: permalink
-        label: Permalink
-        description: The output path for your pages, posts, or collections.
-        default: /posts/:slug:output_ext
-        hidden: true
+      # - type: string
+      #   name: title
+      #   label: Site title
+      # - type: image
+      #   name: logo
+      #   label: Site logo
+      # - type: string
+      #   name: baseurl
+      #   label: Base URL
+      #   description: Serve the website from the given base URL
+      #   hidden: true
+      # - type: string
+      #   name: permalink
+      #   label: Permalink
+      #   description: The output path for your pages, posts, or collections.
+      #   default: /posts/:slug:output_ext
+      #   hidden: true
       # - type: object
       #   name: collections
       #   label: Collections
@@ -63,39 +63,39 @@ models:
       #         - type: image
       #           name: feature_image
       #           label: Collection feature image
-      - type: list
-        name: navigation_header
-        label: Header navigation
-        items:
-          type: object
-          labelField: title
-          fields:
-            - type: string
-              name: title
-              label: Button title
-              required: true
-            - type: string
-              name: url
-              label: URL
-              widget: url
-      - type: list
-        name: navigation_footer
-        label: Footer navigation
-        items:
-          type: object
-          labelField: title
-          fields:
-            - type: string
-              name: title
-              label: Button title
-              required: true
-            - type: string
-              name: url
-              label: URL
-              widget: url
-      - type: string
-        name: email
-        label: Site email
+      # - type: list
+      #   name: navigation_header
+      #   label: Header navigation
+      #   items:
+      #     type: object
+      #     labelField: title
+      #     fields:
+      #       - type: string
+      #         name: title
+      #         label: Button title
+      #         required: true
+      #       - type: string
+      #         name: url
+      #         label: URL
+      #         widget: url
+      # - type: list
+      #   name: navigation_footer
+      #   label: Footer navigation
+      #   items:
+      #     type: object
+      #     labelField: title
+      #     fields:
+      #       - type: string
+      #         name: title
+      #         label: Button title
+      #         required: true
+      #       - type: string
+      #         name: url
+      #         label: URL
+      #         widget: url
+      # - type: string
+      #   name: email
+      #   label: Site email
       # - type: object
       #   name: social_links
       #   label: Social links
@@ -198,12 +198,12 @@ models:
       - type: image
         name: feature_image
         label: Feature image
-      - type: string
-        name: excerpt
-        label: Excerpt
-      - type: boolean
-        name: aside
-        label: Aside
+      # - type: string
+      #   name: excerpt
+      #   label: Excerpt
+      # - type: boolean
+      #   name: aside
+      #   label: Aside
   page:
     type: page
     label: Page
@@ -214,18 +214,18 @@ models:
         name: title
         label: Page title
         required: true
-      - type: markdown
-        name: feature_text
-        label: Feature text
-      - type: image
-        name: feature_image
-        label: Feature image
+      # - type: markdown
+      #   name: feature_text
+      #   label: Feature text
+      # - type: image
+      #   name: feature_image
+      #   label: Feature image
       - type: string
         name: excerpt
         label: Excerpt
-      - type: boolean
-        name: aside
-        label: Aside
+      # - type: boolean
+      #   name: aside
+      #   label: Aside
       - type: boolean
         name: indexing
         label: Indexing
@@ -245,64 +245,64 @@ models:
         name: title
         label: Page title
         required: true
-      - type: markdown
-        name: feature_text
-        label: Feature text
+      # - type: markdown
+      #   name: feature_text
+      #   label: Feature text
       - type: image
         name: feature_image
         label: Feature image
-      - type: string
-        name: excerpt
-        label: Excerpt
-      - type: image
-        name: image
-        label: Image
-      - type: boolean
-        name: comments
-        label: Enable comments
-        default: true
-      - type: boolean
-        name: aside
-        label: Aside
+      # - type: string
+      #   name: excerpt
+      #   label: Excerpt
+      # - type: image
+      #   name: image
+      #   label: Image
+      # - type: boolean
+      #   name: comments
+      #   label: Enable comments
+      #   default: true
+      # - type: boolean
+      #   name: aside
+      #   label: Aside
       - type: list
         name: categories
         label: Categories
         items:
           type: string
-      - type: boolean
-        name: indexing
-        label: Indexing
-  blog:
-    type: page
-    label: Blog
-    template: blog
-    singleInstance: true
-    file: blog/index.html
-    fields:
-      - type: string
-        name: title
-        label: Page title
-        required: true
-      - type: boolean
-        name: aside
-        label: Aside
+      # - type: boolean
+      #   name: indexing
+      #   label: Indexing
+  # blog:
+  #   type: page
+  #   label: Blog
+  #   template: blog
+  #   singleInstance: true
+  #   file: blog/index.html
+  #   fields:
+  #     - type: string
+  #       name: title
+  #       label: Page title
+  #       required: true
+      # - type: boolean
+      #   name: aside
+      #   label: Aside
       # - type: string
       #   name: collectionpage
       #   label: Collection page
-  categories:
-    type: page
-    label: Categories page
-    template: categories
-    singleInstance: true
-    file: categories.md
-    fields:
-      - type: string
-        name: title
-        label: Page title
-        required: true
-      - type: string
-        name: excerpt
-        label: Excerpt
-      - type: boolean
-        name: aside
-        label: Aside
+  # categories:
+  #   type: page
+  #   label: Categories page
+  #   template: categories
+  #   singleInstance: true
+  #   file: categories.md
+  #   fields:
+  #     - type: string
+  #       name: title
+  #       label: Page title
+  #       required: true
+      # - type: string
+      #   name: excerpt
+      #   label: Excerpt
+      # - type: boolean
+      #   name: aside
+      #   label: Aside
