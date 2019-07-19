@@ -1,7 +1,6 @@
 stackbitVersion: ~0.2.0
 ssgName: jekyll
 uploadDir: assets
-pagesDir: posts
 # collections:
 #   - label: Home
 #     source: pages
@@ -209,6 +208,8 @@ models:
     type: page
     label: Page
     layout: page
+    match: "**/*.md"
+    exclude: "{posts/**/*}"
     fields:
       - type: string
         name: title
