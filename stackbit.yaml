@@ -208,7 +208,7 @@ models:
     type: page
     label: Page
     layout: page
-    exclude: "{index.md,_posts/**}"
+    exclude: "{index.md,categories.md,_posts/**}"
     fields:
       - type: string
         name: title
