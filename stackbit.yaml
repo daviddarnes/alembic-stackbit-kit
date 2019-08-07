@@ -1,6 +1,8 @@
 ssgName: jekyll
 stackbitVersion: "^0.2.41"
+staticDir: ""
 uploadDir: assets
+pagesDir: ""
 collections:
   - label: Home
     source: pages
