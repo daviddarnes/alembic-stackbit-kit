@@ -6,6 +6,7 @@ exclude:
 - README.md
 - Gemfile
 - Gemfile.lock
+- stackbit.yaml
 
 # Set plugins
 plugins:
